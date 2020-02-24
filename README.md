@@ -1,7 +1,7 @@
 # Informes
 
 <h2>Descripción </h2>
-Esta es una aplicación que genera facturas enbase a un número de factura introducido. Los datos estarán conformados por tablas hsqldb a la que se conecta.
+Esta es una aplicación que genera facturas en base a un número de factura introducido. Los datos estarán conformados por tablas hsqldb a la que se conecta.
 
 <h2>Librerías usadas en el proyecto </h2>
 
