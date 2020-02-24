@@ -1,9 +1,9 @@
-# informes
+# Informes
 
-Descripción 
+<h2>Descripción </h2>
 Esta es una aplicación que genera facturas enbase a un número de factura introducido. Los datos estarán conformados por tablas hsqldb a la que se conecta.
 
-Librerías usadas en el proyecto 
+<h2>Librerías usadas en el proyecto </h2>
 
 com.lowagie.text-2.1.7
 commons-beanutils-1.9.3
