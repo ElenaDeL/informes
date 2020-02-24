@@ -38,22 +38,53 @@ import net.sf.jasperreports.view.JasperViewer;
 
 public class Frame extends JFrame {
 
+	//Atributos
+	/**
+	 * Panel por defecto
+	 */
 	private JPanel contentPane;
 
+	
+	/**
+	 * panel container CardLayout
+	 */
 	JPanel cards;
+	/**
+	 * Paneles contenidos en Card
+	 */
 	JPanel panelCliente;
 	JPanel panelFactura;
 	JPanel panelGenerarFacturas;
+	
 	private JScrollPane scrollPane;
+	/**
+	 * Tabla que muestra los datos de los clientes
+	 */
 	private JTable table;
+	/**
+	 * conexión a la base de datos 
+	 */
 	private Connection con;
 	private Statement stmt;
 	private ResultSet rs;
 	private JTextField textField;
+	/**
+	 * tabla que muestra las facturas
+	 */
 	private JTable table_1;
+	/**
+	 * añade parámetros a las querys
+	 */
 	private PreparedStatement preparedStatement;
+	/**
+	 * aquí se introduce el número de la factura a fenerar
+	 */
 	private JTextField textField_1;
-
+/**
+ * @author Elena de Lope
+ * @version 1.0 24/02/2020
+ * @param args
+ */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -71,6 +102,10 @@ public class Frame extends JFrame {
 	 * Create the frame.
 	 */
 	public Frame() {
+		
+		/**
+		 * settings del panel por defecto
+		 */
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -78,6 +113,9 @@ public class Frame extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
+		/**
+		 * menú con opciones de visualizar clientes, facturas y generar factura
+		 */
 		JMenuBar menuBar = new JMenuBar();
 		menuBar.setBounds(10, 0, 151, 32);
 		contentPane.add(menuBar);
@@ -85,6 +123,9 @@ public class Frame extends JFrame {
 		JMenu mnMenu = new JMenu("menu");
 		menuBar.add(mnMenu);
 
+		/**
+		 * opción de menú cliente
+		 */
 		JMenuItem clientes = new JMenuItem("clientes");
 		clientes.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -93,6 +134,9 @@ public class Frame extends JFrame {
 		});
 		mnMenu.add(clientes);
 
+		/**
+		 * opción de menú facturas
+		 */
 		JMenuItem facturas = new JMenuItem("facturas");
 		facturas.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -101,6 +145,9 @@ public class Frame extends JFrame {
 		});
 		mnMenu.add(facturas);
 
+		/**
+		 * opción de menú generar factura
+		 */
 		JMenuItem generarFacturas = new JMenuItem("generar facturas");
 		generarFacturas.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -109,11 +156,17 @@ public class Frame extends JFrame {
 		});
 		mnMenu.add(generarFacturas);
 
+		/**
+		 * panel contenedor
+		 */
 		cards = new JPanel();
 		cards.setBounds(20, 43, 404, 202);
 		contentPane.add(cards);
 		cards.setLayout(new CardLayout(0, 0));
 
+		/**
+		 * panel contenido en Cards
+		 */
 		panelCliente = new JPanel();
 		cards.add(panelCliente, "clientes");
 		panelCliente.setLayout(new BorderLayout(0, 0));
@@ -121,6 +174,9 @@ public class Frame extends JFrame {
 		scrollPane = new JScrollPane();
 		panelCliente.add(scrollPane, BorderLayout.CENTER);
 
+		/**
+		 * tabla donde se visualizan los clientes de la bbdd
+		 */
 		table = new JTable();
 		scrollPane.setViewportView(table);
 		try {
@@ -152,7 +208,7 @@ public class Frame extends JFrame {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		
 		panelFactura = new JPanel();
 		cards.add(panelFactura, "factura");
 		panelFactura.setLayout(new BorderLayout(0, 0));
@@ -167,7 +223,9 @@ public class Frame extends JFrame {
 		textField = new JTextField();
 		panel.add(textField);
 		textField.setColumns(10);
-		
+		/**
+		 * botón que genera la factura en base al número de id de la misma
+		 */
 		JButton btnNewButton = new JButton("generar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -212,6 +270,9 @@ public class Frame extends JFrame {
 		JScrollPane scrollPane_1 = new JScrollPane();
 		panelFactura.add(scrollPane_1, BorderLayout.CENTER);
 		
+		/**
+		 * tabla donde se visualizan las facturas de la bbdd
+		 */
 		table_1 = new JTable();
 		scrollPane_1.setViewportView(table_1);
 
@@ -225,6 +286,9 @@ public class Frame extends JFrame {
 		btnGenerarFactura.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
+				/**
+				 * File chooser para poner la ruta de dónde se guardan los archivos generados
+				 */
 				JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
 
 				int returnValue = jfc.showOpenDialog(null);
@@ -250,6 +314,11 @@ public class Frame extends JFrame {
 		textField_1.setColumns(10);
 
 	}
+	
+	/**
+	 * método protected sin parámetros 
+	 * genera facturas
+	 */
 	protected void generarFactura() {
         // TODO Auto-generated method stub
         JFileChooser fc = new JFileChooser();
@@ -274,6 +343,9 @@ public class Frame extends JFrame {
 
         }
     }
+	/**
+	 * método público para no recordar los valores anteriormente introducidos
+	 */
 	public void limpiarTabla() {
         DefaultTableModel tb = (DefaultTableModel) table.getModel();
         int a = table.getRowCount() - 1;

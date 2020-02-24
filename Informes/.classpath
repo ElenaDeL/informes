@@ -6,15 +6,15 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/ccc/Desktop/eclipse-workspace/Informes/librerias/com.lowagie.text-2.1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ccc/Desktop/eclipse-workspace/Informes/librerias/commons-beanutils-1.9.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ccc/Desktop/eclipse-workspace/Informes/librerias/commons-collections-3.2.1-1.0.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ccc/Desktop/eclipse-workspace/Informes/librerias/commons-collections4-4.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ccc/Desktop/eclipse-workspace/Informes/librerias/commons-digester-2.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ccc/Desktop/eclipse-workspace/Informes/librerias/commons-javaflow-1066591.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ccc/Desktop/eclipse-workspace/Informes/librerias/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ccc/Desktop/eclipse-workspace/Informes/librerias/hsqldb.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ccc/Desktop/eclipse-workspace/Informes/librerias/itext-2.1.7.js2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ccc/Desktop/eclipse-workspace/Informes/librerias/jasperreports-6.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ccc/git/informes/Informes/librerias/com.lowagie.text-2.1.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ccc/git/informes/Informes/librerias/commons-beanutils-1.9.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ccc/git/informes/Informes/librerias/commons-collections-3.2.1-1.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ccc/git/informes/Informes/librerias/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ccc/git/informes/Informes/librerias/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ccc/git/informes/Informes/librerias/commons-javaflow-1066591.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ccc/git/informes/Informes/librerias/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ccc/git/informes/Informes/librerias/hsqldb.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ccc/git/informes/Informes/librerias/itext-2.1.7.js2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ccc/git/informes/Informes/librerias/jasperreports-6.11.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
