@@ -18,9 +18,20 @@ jasperreports-6.11.0 <br>
 
 <h2>Funcionamiento de la interfaz</h2>
 
+<h3>Primero se visualizan los clientes de la bbdd.</h3>
+
 ![img1](./Informes/1.png)
+  
+ <h3>Segundo se visualizan las facturas de los clientes de la bbdd.</h3>
+ 
 ![img1](./Informes/2.png)
+
+ <h3>Tercero se introduce el número de factura que quieres imprimir o guardar.</h3>
+
 ![img1](./Informes/3.png)
+
+ <h3>Resultado final</h3>
+
 ![img1](./Informes/4.png)
 
 
