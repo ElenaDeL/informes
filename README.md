@@ -18,6 +18,6 @@ jasperreports-6.11.0 <br>
 
 <h2>imagenes de la interfaz (cómo funciona)</h2>
 
-![https://raw.githubusercontent.com/parzibyte/ElenaDeL/Informes/1.png]
+![https://raw.githubusercontent.com/ElenaDeL/Informes/1.png]
 
 
