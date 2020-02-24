@@ -24,14 +24,14 @@ jasperreports-6.11.0 <br>
   
  <h3>Segundo se visualizan las facturas de los clientes de la bbdd.</h3>
  
-![img1](./Informes/2.png)
+![img2](./Informes/2.png)
 
  <h3>Tercero se introduce el número de factura que quieres imprimir o guardar.</h3>
 
-![img1](./Informes/3.png)
+![img3](./Informes/3.png)
 
  <h3>Resultado final</h3>
 
-![img1](./Informes/4.png)
+![img4](./Informes/4.png)
 
 
