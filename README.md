@@ -16,8 +16,11 @@ hsqldb <br>
 itext-2.1.7.js2 <br>
 jasperreports-6.11.0 <br>
 
-<h2>imagenes de la interfaz (cómo funciona)</h2>
+<h2>Funcionamiento de la interfaz</h2>
 
-![screenshot](https://raw.githubusercontent.com/ElenaDeL/informes/Informes/1.png)
+![img1](./Informes/1.png)
+![img1](./Informes/2.png)
+![img1](./Informes/3.png)
+![img1](./Informes/4.png)
 
 
